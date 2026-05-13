@@ -258,7 +258,5 @@ def main():
         elif cmd[0] == "KELUAR":
             break
 
-#mandaaaaaagit
-    print("Selesai")
 if __name__ == "__main__":
     main()
