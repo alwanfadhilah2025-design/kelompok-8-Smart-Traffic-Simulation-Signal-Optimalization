@@ -223,7 +223,7 @@ def main():
         graph.tambah_jalan(u, v, j, l)
 
     print("Smart Traffic Simulation")
-
+    print ("test")
     while True:
         cmd = input(">> ").split()
 
