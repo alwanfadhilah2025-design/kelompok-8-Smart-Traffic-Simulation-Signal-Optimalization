@@ -222,7 +222,7 @@ def main():
     for u, v, j, l in edges:
         graph.tambah_jalan(u, v, j, l)
 
-    print("Smart Traffic Simulation 1")
+    print("Smart Traffic Simulation")
 
     while True:
         cmd = input(">> ").split()
@@ -256,6 +256,7 @@ def main():
             print("Jumlah:", len(queues[nama]))
 
         elif cmd[0] == "KELUAR":
+            print("TES")
             break
 
 if __name__ == "__main__":
