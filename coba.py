@@ -256,8 +256,9 @@ def main():
             print("Jumlah:", len(queues[nama]))
 
         elif cmd[0] == "KELUAR":
-            print("TES 2")
             break
 
+#mandaaaaaagit
+    print("Selesai")
 if __name__ == "__main__":
     main()
