@@ -222,7 +222,7 @@ def main():
     for u, v, j, l in edges:
         graph.tambah_jalan(u, v, j, l)
 
-    print("Smart Traffic Simulation")
+    print("Smart Traffic Simulation 1")
 
     while True:
         cmd = input(">> ").split()
