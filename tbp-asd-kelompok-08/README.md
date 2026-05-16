@@ -30,17 +30,17 @@ Project Smart Traffic Simulation & Signal Optimization adalah simulasi sistem la
 Struktur data yang digunakan pada project Smart Traffic Simulation & Signal Optimization, yaitu:
 
 - Graph (Graf)
- Digunakan untuk merepresentasikan jaringan jalan dan persimpangan kota.
+  ○ Digunakan untuk merepresentasikan jaringan jalan dan persimpangan kota.
 - Linked List
- Digunakan sebagai dasar implementasi adjacency list pada graph dan antrian kendaraan.
+  ○ Digunakan sebagai dasar implementasi adjacency list pada graph dan antrian kendaraan.
 - Priority Queue
- Digunakan untuk mengatur prioritas kendaraan, di mana ambulans diproses lebih dahulu.
+  ○ Digunakan untuk mengatur prioritas kendaraan, di mana ambulans diproses lebih dahulu.
 - Stack
- Digunakan untuk menyimpan riwayat atau siklus lampu lalu lintas.
+  ○ Digunakan untuk menyimpan riwayat atau siklus lampu lalu lintas.
 - Binary Search Tree (BST)
- Digunakan untuk pencarian cepat data persimpangan berdasarkan nama.
+  ○ Digunakan untuk pencarian cepat data persimpangan berdasarkan nama.
 - Array/List
- Digunakan untuk penyimpanan data sementara, hasil sorting, dan proses simulasi lainnya.
+  ○ Digunakan untuk penyimpanan data sementara, hasil sorting, dan proses simulasi lainnya.
 
 ---
 
