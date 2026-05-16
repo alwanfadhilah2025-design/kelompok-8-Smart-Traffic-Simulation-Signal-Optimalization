@@ -1,6 +1,6 @@
 ## KELOMPOK-8-Smart-Traffic-Signal-Optimalization
 
-topik 8 Smart Traffic Simulation & Signal Optimalization 
+topik 7 Smart Traffic Simulation & Signal Optimalization 
 
 ## Team
 
@@ -33,10 +33,6 @@ Struktur data yang digunakan pada project Smart Traffic Simulation & Signal Opti
 
    &bull; Digunakan untuk merepresentasikan jaringan jalan dan persimpangan kota.
   
-- Linked List
-
-   &bull; Digunakan sebagai dasar implementasi adjacency list pada graph dan antrian kendaraan.
-  
 - Priority Queue
 
    &bull; Digunakan untuk mengatur prioritas kendaraan, di mana ambulans diproses lebih dahulu.
@@ -48,11 +44,8 @@ Struktur data yang digunakan pada project Smart Traffic Simulation & Signal Opti
 - Binary Search Tree (BST)
 
   &bull; Digunakan untuk pencarian cepat data persimpangan berdasarkan nama.
+
   
-- Array/List
-
-   &bull; Digunakan untuk penyimpanan data sementara, hasil sorting, dan proses simulasi lainnya.
-
 ---
 
 ## Fitur Program 
