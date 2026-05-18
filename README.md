@@ -33,11 +33,11 @@ Struktur data yang digunakan pada project Smart Traffic Simulation & Signal Opti
 
 • Digunakan untuk merepresentasikan jaringan jalan dan persimpangan kota.
 
-* Priority Queue
+* iority Queue
 
 • Digunakan untuk mengatur prioritas kendaraan, di mana ambulans diproses lebih dahulu.
 
-* *Stack
+* Stack
 
 • Digunakan untuk menyimpan riwayat atau siklus lampu lalu lintas.
 
