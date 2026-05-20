@@ -56,3 +56,11 @@ Fitur utama pada program Smart Traffic Simulation & Signal Optimization, yaitu:
 * Pengelolaan Data Persimpangan
 * Analisis dan Laporan Kemacetan
 * Command Line Interface (CLI) Simulasi
+
+---
+
+## Cara Menjalankan 
+
+Menjalankan sistem utama melalui terminal VS Code dengan perintah:
+
+python src/main.py
