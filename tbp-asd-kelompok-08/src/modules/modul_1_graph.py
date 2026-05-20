@@ -1,35 +1,54 @@
-import pytest
-import sys
-import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+@dataclass
+class Persimpangan:
+    nama: str
+    kapasitas: int = 20
 
-from src.modul_1_graph import GraphJalan, Persimpangan, generate_jaringan
+class EdgeNode:
+    def __init__(self, dest, jarak, kapasitas_lajur):
+        self.dest = dest
+        self.jarak = jarak
+        self.kapasitas_lajur = kapasitas_lajur
+        self.next = None
 
-def test_tambah_persimpangan():
-    g = GraphJalan()
-    p = Persimpangan("P01", 20)
-    g.tambah_persimpangan(p)
-    assert "P01" in g.adj
-    assert g.persimpangan["P01"] == p
+class GraphJalan:
+    def __init__(self):
+        self.adj = {}
+        self.persimpangan = {}
 
-def test_tambah_jalan_dua_arah():
-    g = GraphJalan()
-    g.tambah_persimpangan(Persimpangan("A"))
-    g.tambah_persimpangan(Persimpangan("B"))
-    g.tambah_jalan("A", "B", 500, 2, dua_arah=True)
-    tetangga_A = g.tetangga("A")
-    assert len(tetangga_A) == 1
-    assert tetangga_A[0][0] == "B"
-    tetangga_B = g.tetangga("B")
-    assert len(tetangga_B) == 1
-    assert tetangga_B[0][0] == "A"
+    def tambah_persimpangan(self, p):
+        self.persimpangan[p.nama] = p
+        self.adj[p.nama] = None
 
-def test_generate_jaringan():
-    persimpangan, edges = generate_jaringan(25, 17)
-    assert len(persimpangan) == 25
-    assert len(edges) >= 39  # 24 + 15 = 39, bisa lebih karena seed
-    # Cek tiap edge punya 4 elemen
-    for u, v, j, l in edges:
-        assert isinstance(j, int)
-        assert 100 <= j <= 2000
-       
+    def tambah_jalan(self, asal, tujuan, jarak, lajur, dua_arah=True):
+        node = EdgeNode(tujuan, jarak, lajur)
+        node.next = self.adj[asal]
+        self.adj[asal] = node
+        if dua_arah:
+            node2 = EdgeNode(asal, jarak, lajur)
+            node2.next = self.adj[tujuan]
+            self.adj[tujuan] = node2
+
+    def tetangga(self, nama):
+        hasil = []
+        curr = self.adj[nama]
+        while curr:
+            hasil.append((curr.dest, curr.jarak))
+            curr = curr.next
+        return hasil
+
+def generate_jaringan(n=25, seed=17):
+    rng = np.random.default_rng(seed)
+    nama_p = [f'P{i:02d}' for i in range(n)]
+    persimpangan = [Persimpangan(nm, int(rng.integers(15, 30))) for nm in nama_p]
+    perm = rng.permutation(n)
+    edges = []
+    for i in range(1, n):
+        u = nama_p[perm[i-1]]
+        v = nama_p[perm[i]]
+        edges.append((u, v, int(rng.integers(100, 2000)), int(rng.integers(1, 4))))
+    for _ in range(15):
+        i, j = rng.choice(n, 2, replace=False)
+        edges.append((nama_p[i], nama_p[j],
+                      int(rng.integers(100,2000)),
+                      int(rng.integers(1,4))))
+    return persimpangan, edges
