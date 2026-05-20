@@ -66,3 +66,33 @@ Menjalankan sistem utama melalui terminal VS Code dengan perintah:
 ```python
 python src/main.py
 ```
+
+---
+
+## Struktur Folder
+
+tbp-asd-kelompok-08/
+│
+├── AI_Log/                  # Menyimpan log atau catatan proses pengerjaan project
+│
+├── screenshots/             # Berisi screenshot output program dan dokumentasi sistem
+│
+├── docs/                    # Berisi laporan akhir dan slide presentasi project
+│
+├── experiments/             # Digunakan untuk benchmark dan pengujian performa algoritma
+│
+├── src/                     # Folder utama source code program
+│   │
+│   ├── data_structures/     # Implementasi struktur data seperti Graph, Queue, BST, Stack
+│   │
+│   ├── modules/             # Berisi modul fitur sistem simulasi lalu lintas
+│   │
+│   └── main.py              # Program utama untuk menjalankan sistem CLI
+│
+├── tests/                   # Berisi file pengujian sistem dan struktur data
+│
+├── .gitignore               # File yang diabaikan saat upload ke GitHub
+│
+├── requirements.txt         # Daftar library Python yang dibutuhkan
+│
+└── README.md                # Dokumentasi utama project dan cara menjalankan program
