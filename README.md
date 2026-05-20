@@ -71,6 +71,7 @@ python src/main.py
 
 ## Struktur Folder
 
+```tbp
 tbp-asd-kelompok-08/
 │
 ├── AI_Log/                  # Menyimpan log atau catatan proses pengerjaan project
@@ -96,3 +97,4 @@ tbp-asd-kelompok-08/
 ├── requirements.txt         # Daftar library Python yang dibutuhkan
 │
 └── README.md                # Dokumentasi utama project dan cara menjalankan program
+```
