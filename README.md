@@ -63,4 +63,6 @@ Fitur utama pada program Smart Traffic Simulation & Signal Optimization, yaitu:
 
 Menjalankan sistem utama melalui terminal VS Code dengan perintah:
 
+```python
 python src/main.py
+```
