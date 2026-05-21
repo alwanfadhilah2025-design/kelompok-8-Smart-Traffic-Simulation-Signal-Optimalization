@@ -1,1 +1,11 @@
+# OS
+.DS_Store
+Thumbs.db
 
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+# Jupyter Notebook
+.ipynb_checkpoints/
