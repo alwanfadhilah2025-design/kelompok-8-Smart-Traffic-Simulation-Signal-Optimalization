@@ -4,7 +4,7 @@ topik 7 Smart Traffic Simulation & Signal Optimalization
 
 ## Team
 
-1. Alwan Fadhilah Rafianza_25051030077
+1. Alwan Fadhilah Rafiyanza_25051030077
 2. Arwan Adrean_25051030065
 3. Faqih Rizky Saputra_25051030048
 4. Amanda Lulu Prasetia_25051030079
