@@ -1,1 +1,123 @@
+========================================
+LOG PROMPT PENGGUNAAN AI ASSISTANT
+Proyek: TBP ASD Topik 7 - Smart Traffic Simulation
+Tanggal: 14-21 Mei 2026
+Asisten: ChatGPT (OpenAI)
+========================================
 
+[19/05/2026 - Mulai]
+
+Prompt #1:
+User mengupload file panduan (PANDUAN SUDAH DIEDIT TOPIK 7.docx) dan screenshot struktur folder. Bertanya: "Disitukan kelompok ku topik 7 dan digithub ada struktur seperti Screenshot. Isinya setiap folder tu apa saja ya?"
+
+Respon: Dijelaskan isi setiap folder (data_structures, modules, tests, docs, experiments, AI_Log) serta file-file yang wajib ada di masing-masing folder, termasuk README, requirements.txt, .gitignore, main.py.
+
+Prompt #2:
+User: "Bisa jelaskan dengan bahasa mudah?"
+
+Respon: Penjelasan ulang dengan bahasa santai dan analogi sederhana.
+
+Prompt #3:
+User: "Jadi gini 1. data_structures = isinya coding 2. modules = isinya coding 3. tests = isinya coding 4. docs = isi file laporan dan slide 5. experiments = ? AI_Log = File atau foto prompt AI?"
+
+Respon: Dijelaskan bahwa experiments isinya coding skrip benchmark, AI_Log isinya file teks log prompt dan screenshot.
+
+Prompt #4:
+User memberikan kode lengkap (versi awal dengan n=100) dan bertanya apakah sudah benar.
+
+Respon: Dijelaskan bahwa numpy belum terinstal, dan kode perlu disesuaikan dengan spesifikasi (25 persimpangan, perintah ISOLASI pakai DFS, dll.)
+
+Prompt #5:
+User memberikan kode terbaru dengan n=25, bertanya: "ini udah 25 persimpangan belum?"
+
+Respon: Ya, sudah 25 persimpangan.
+
+Prompt #6:
+User bertanya tentang 500 event kendaraan: apakah harus input manual atau sudah ada di data?
+
+Respon: Dijelaskan bahwa tidak harus manual, bisa pakai perintah GENERATE atau skrip otomatis. Ditambahkan contoh perintah GENERATE.
+
+Prompt #7:
+User meminta dibuatkan file untuk data_structures (Graph, Priority Queue, Stack, BST).
+
+Respon: Diberikan kode terpisah untuk masing-masing struktur data.
+
+Prompt #8:
+User meminta dibuatkan modul (modul_1_graph.py, modul_2_priority_queue.py, modul_3_dijkstra.py, modul_4_bst_index.py, modul_5_sorting.py, modul_6_cli.py) dari kode yang sudah ada.
+
+Respon: Diberikan 6 file modul lengkap beserta penjelasan.
+
+Prompt #9:
+User bertanya: "Dalam Modul 6 CLI, yang diupload di GitHub tu apa? codingan atau perintah CLI di terminal?"
+
+Respon: Diupload file codingan (.py), bukan perintah terminal.
+
+Prompt #10:
+User bertanya tentang isi folder tests.
+
+Respon: Dijelaskan bahwa isinya file test per modul (test_modul_1_graph.py, dll.) dan diberikan contoh kode test untuk 6 modul.
+
+Prompt #11:
+User bertanya apakah test sudah diadaptasi dari codingan utamanya.
+
+Respon: Ya, sudah diadaptasi. Namun perlu dipisah ke modul-modul terlebih dahulu.
+
+Prompt #12:
+User bertanya apakah kode di main.py cukup diupload.
+
+Respon: Dijelaskan bahwa main.py cukup sebagai entry point (4-5 baris), bukan tempat semua kode.
+
+Prompt #13:
+User bertanya: "Jadi isi main.py tu apa?"
+
+Respon: Diberikan contoh isi main.py: from src.modul_6_cli import main; if __name__ == "__main__": main()
+
+Prompt #14:
+User bertanya tentang isi folder tests (dengan gambar struktur).
+
+Respon: Dijelaskan minimal 1 file test per modul, total 6 file test.
+
+Prompt #15:
+User bertanya: "Test itu sudah kamu adaptasi dari codingan utama saya ini kan?" (sambil menyertakan kode lengkap).
+
+Respon: Dijelaskan bahwa test yang diberikan mengasumsikan kode sudah dipisah ke modul. Jika masih satu file, perlu disesuaikan importnya.
+
+Prompt #16:
+User bertanya: "Aku upload di atas aman kan berarti ke bagian-bagian test?"
+
+Respon: Aman, asalkan struktur folder dan isi modul sesuai.
+
+Prompt #17:
+User mengirim screenshot struktur laporan (Bab I-VII) dan meminta dibuatkan laporan sementara.
+
+Respon: Diberikan draft laporan lengkap 8-12 halaman sesuai struktur.
+
+Prompt #18:
+User meminta dibuatkan dalam bentuk PDF.
+
+Respon: Dijelaskan tidak bisa langsung menghasilkan file PDF, tetapi diberikan kode LaTeX dan cara konversi ke PDF via Overleaf atau Google Docs.
+
+Prompt #19:
+User meminta Bab III diperluas menjadi 2-3 halaman dengan bahasa lebih mudah.
+
+Respon: Diberikan Bab III yang diperluas dengan penjelasan santai per modul.
+
+Prompt #20:
+User bertanya: "di eksperiment kan berisi skip eksperimen runtime, itu siainya output?"
+
+Respon: Dijelaskan bahwa experiments berisi skrip benchmark, outputnya adalah teks tabel runtime yang disalin ke laporan.
+
+Prompt #21:
+User bertanya: "Cara dapat benchmark gimana?"
+
+Respon: Dijelaskan cara membuat skrip benchmark dengan time.perf_counter() dan timeit, serta diberikan contoh kode.
+
+Prompt #22:
+User bertanya tentang file linked_list.py: "itu saja yang saya upload?"
+
+Respon: Dijelaskan bahwa hanya class LLNode tidak cukup, perlu kelas LinkedList dengan method add_front, add_back, dll.
+
+Prompt #23:
+User bertanya: "benchmark.py tu isi filenya apa sih?"
+
+Respon: Diberikan isi benchmark.py lengkap untuk sorting (N=10,25,100) serta Dijkstra dan priority queue.
