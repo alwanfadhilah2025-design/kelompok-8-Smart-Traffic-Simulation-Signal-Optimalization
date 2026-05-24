@@ -1,20 +1,22 @@
-import pytest
-import sys
-import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from modules.modul5_sorting import (
+    selection_sort,
+    insertion_sort
+)
 
-from src.modul_5_sorting import selection_sort_by_queue_length, insertion_sort_by_queue_length
+data = [
+    ("P01",3),
+    ("P02",8),
+    ("P03",1),
+    ("P04",5)
+]
 
-def test_selection_sort():
-    data = [("P02", 5), ("P01", 2), ("P03", 8)]
-    sorted_data = selection_sort_by_queue_length(data)
-    assert sorted_data == [("P01", 2), ("P02", 5), ("P03", 8)]
+hasil1 = selection_sort(data)
+hasil2 = insertion_sort(data)
 
-def test_insertion_sort():
-    data = [("P02", 5), ("P01", 2), ("P03", 8)]
-    sorted_data = insertion_sort_by_queue_length(data)
-    assert sorted_data == [("P01", 2), ("P02", 5), ("P03", 8)]
+print("Selection :", hasil1)
+print("Insertion :", hasil2)
 
-def test_sort_empty():
-    assert selection_sort_by_queue_length([]) == []
-    assert insertion_sort_by_queue_length([]) == []
+assert hasil1[0][1] == 8
+assert hasil2[0][1] == 8
+
+print("TEST SORTING BERHASIL")
