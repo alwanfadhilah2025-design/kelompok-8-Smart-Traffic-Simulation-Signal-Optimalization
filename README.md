@@ -59,13 +59,27 @@ Fitur utama pada program Smart Traffic Simulation & Signal Optimization, yaitu:
 
 ---
 
-## Cara Menjalankan 
+## Instalasi
 
-Menjalankan sistem utama melalui terminal VS Code dengan perintah:
+1. Clone atau download repository ini.
+2. Buka terminal pada folder proyek.
+3. Install dependensi yang diperlukan:
 
-```python
-python src/main.py
+```bash
+pip install -r requirements.txt
 ```
+
+---
+
+## Cara Menjalankan Program
+
+Jalankan file utama:
+
+```bash
+python main.py
+```
+
+Setelah program berjalan, terminal akan menampilkan menu CLI dan pengguna dapat memasukkan perintah yang tersedia.
 
 ---
 
